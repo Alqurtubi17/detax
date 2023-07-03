@@ -6,8 +6,8 @@ from newsapi import NewsApiClient
 
 newsapi=NewsApiClient(api_key='7d125ba012bc447681da91239d255267')
 
-passiveaggressive_model=pickle.load(open("modelNew.pickle","rb"))
-tfidf_vectorizer=pickle.load(open("tfidfNew.pickle","rb"))
+passiveaggressive_model=pickle.load(open("modelNewIndo.pickle","rb"))
+tfidf_vectorizer=pickle.load(open("tfidfNewIndo.pickle","rb"))
 
 def predict_fake(title,text):
     
