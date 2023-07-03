@@ -30,7 +30,7 @@ def news():
 def hoax():
     return render_template('hoax.html')
 
-@app.route('/api/v1/predict', methods=['POST'])
+@app.route('/news/api/v1/predict', methods=['POST'])
 def predict():
     try:
         data = request.get_json()
